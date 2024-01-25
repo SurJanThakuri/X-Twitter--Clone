@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/X</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-black text-white">
+    <div class="mobileViewTop sm:hidden block">
+        <div class="topbar flex justify-between fixed bg-black w-full">
+            <div class="profile">
+                <img class="rounded-[50%] w-10 m-3"
+                    src="https://pbs.twimg.com/profile_images/1640739201707831296/DMRm8HpI_bigger.jpg" alt="">
+            </div>
+            <div class="logo m-3">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="invert w-8 xl:ml-16 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="settings m-3">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="mobileViewBottom sm:hidden block absolute bottom-0 bg-black w-full h-16 pt-4">
+        <div class="bottombar flex justify-around sticky">
+            <span class="text-3xl material-symbols-outlined">
+                home
+            </span>
+            <span class="text-3xl material-symbols-outlined">
+                search
+            </span>
+            <span class="text-3xl material-symbols-outlined">
+                notifications
+            </span>
+            <span class="text-3xl material-symbols-outlined">
+                chat_bubble
+            </span>
+        </div>
+    </div>
+    <button
+        class="sm:hidden m-4 absolute bottom-[70px] right-0 bg-[#1C9BF0] font-bold text-white rounded-[50%] w-14 h-14"><span
+            class="material-symbols-outlined">
+            history_edu
+        </span></button>
+    <div class="flex container mx-auto">
+        <div
+            class="first hidden sm:block w-28 xl:w-[70%] overflow-auto scrollbar-thin scrollbar-thumb-transparent overflow-y-scroll h-screen">
+            <div class="logo invert my-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 xl:ml-16 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar flex md:items-end flex-col">
+                <ul class="flex flex-col text-2xl xl:px-11 font-bold w-full">
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            home
+                        </span> <span class="hidden xl:block"> Home</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            search
+                        </span>
+                        <span class="hidden xl:block"> Explore</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            notifications
+                        </span>
+                        <span class="hidden xl:block"> Notifications</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            mail
+                        </span>
+                        <span class="hidden xl:block"> Messages</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            ballot
+                        </span> <span class="hidden xl:block"> Lists</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            bookmark
+                        </span> <span class="hidden xl:block"> Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            group
+                        </span> <span class="hidden xl:block"> Communities</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined">
+                            workspace_premium
+                        </span> <span class="hidden xl:block"> Premium</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            person
+                        </span> <span class="hidden xl:block"> Profile</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 hover:bg-[#16181c] hover:rounded-full cursor-pointer">
+                        <span class="text-3xl material-symbols-outlined">
+                            pending
+                        </span> <span class="hidden xl:block"> More</span>
+                    </li>
+                    <li
+                        class="flex xl:justify-start justify-center xl:w-fit items-center gap-3 py-3 px-5 cursor-pointer">
+                        <button
+                            class=" hidden xl:block bg-[#1C9BF0] font-bold text-white rounded-full py-3 px-20">Post</button>
+                        <button class="xl:hidden bg-[#1C9BF0] font-bold text-white rounded-[50%] w-11 px-2.5 h-11"><span
+                                class="material-symbols-outlined">
+                                history_edu
+                            </span></button>
+                    </li>
+                    <li
+                        class="flex mt-28 justify-center w-full items-center gap-16 hover:bg-[#16181c] hover:rounded-full p-3 cursor-pointer">
+
+                        <div class="flex justify-center items-center gap-4">
+                            <div class="first w-15">
+                                <img class="h-[50px] w-[50px] rounded-[50%]"
+                                    src="https://pbs.twimg.com/profile_images/1640739201707831296/DMRm8HpI_bigger.jpg"
+                                    alt="">
+                            </div>
+                            <div class="second">
+                                <div class="text-lg font-bold cursor-pointer">Surjan Thakuri</div>
+                                <div class="text-lg text-gray-500">@suRJAn444</div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="second h-[95vh] w-full overflow-auto sm:border-[1px] sm:border-x-gray-600 sm:border-y-black sm:scrollbar-none  scrollbar-thinscrollbar-thumb-transparent overflow-y-scroll sm:h-screen">
+            <div class="sticky top-0 bg-black backdrop-blur-3xl opacity-90">
+                <div class="top flex p-3 relative">
+                    <div class="absolute w-16 h-1 rounded-full bg-[#1C9BF0] bottom-0 left-[18%] z-10"></div>
+                    <div class="left w-1/2 flex justify-center font-bold text-lg">For you</div>
+                    <div class="right w-1/2 flex justify-center font-bold text-lg">Following</div>
+                    <div class="hidden sm:block settings mx-3">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="h-0.5 w-full bg-gray-600"></div>
+            <div class="happening flex">
+                <div class="hidden sm:block img m-3 mr-0 w-15">
+                    <img class=" rounded-[50%]"
+                        src="https://pbs.twimg.com/profile_images/1640739201707831296/DMRm8HpI_bigger.jpg" alt="">
+                </div>
+                <input class="hidden sm:block w-full outline-none bg-black text-white mx-5 my-0 text-xl" type="text"
+                    placeholder="What is happening?!">
+            </div>
+            <div class="hidden sm:flex justify-between py-2 px-6">
+                <div class="blueIcons flex gap-2 text-[#1C9BF0] mx-16">
+                    <span class="material-symbols-outlined cursor-pointer">
+                        imagesmode
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer">
+                        gif_box
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer">
+                        ballot
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer">
+                        sentiment_satisfied
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer">
+                        pending_actions
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-[#124E78]">
+                        location_on
+                    </span>
+                </div>
+                <div class="smallPost">
+                    <button class=" bg-[#124E78] font-bold text-[#808080] rounded-full py-1 px-4">Post</button>
+                </div>
+            </div>
+            <div class="hidden sm:block h-0.5 w-full bg-gray-600"></div>
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 w-full bg-gray-600"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 w-full bg-gray-600"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-3">
+                            <img class="w-10 rounded-[50%]"
+                                src="https://pbs.twimg.com/profile_images/588936040888438784/RxOOcrCe_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content m-3">
+                            <span class="font-bold hover:underline cursor-pointer">Setopati</span>
+                            <span class="text-[#71767B] cursor-pointer">@setopati · Jan 22</span>
+                            <div>ड्राइभिङ स्कुलबाट प्रशिक्षण लिएको प्रमाणपत्र पेश गरेर मात्र ट्रायल दिने व्यवस्था गरौंः
+                                यातायातमन्त्री ज्वाला</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://img.setoparty.com/uploads/posts/540X340/WhatsApp-Image-2024-01-23-at-10.06.46-AM-1705985957.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-[#71767B]">
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        chat_bubble
+                                    </span>153
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        repeat
+                                    </span>76
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        favorite
+                                    </span>217
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bar_chart
+                                    </span>45K
+                                </div>
+                                <div class="icon flex justify-center items-center">
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined cursor-pointer">
+                                        upload
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 w-full bg-gray-600"></div>
+            </div>
+        </div>
+        <div
+            class="third w-full hidden lg:block overflow-auto scrollbar-thin scrollbar-thumb-transparent overflow-y-scroll h-screen">
+            <div class="search m-3">
+                <input type="text" class="w-[73%] rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
+            </div>
+
+            <div class="m-3 bg-[#16181c] w-[70%] py-5 mb-0 pb-0 rounded-2xl">
+                <h1 class="text-xl font-bold px-3">You might like</h1>
+                <div class="item flex justify-between items-center px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="first w-15"><img class="rounded-sm h-[40px] w-[40px]"
+                                src="https://pbs.twimg.com/profile_images/1278183948279922690/ybnDHXn7_bigger.jpg"
+                                alt=""></div>
+                        <div class="second">
+                            <div class="flex items-center font-bold hover:underline cursor-pointer">PlayStation<svg
+                                    viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                    class="ml-[2px] w-[20px] h-[20px] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-1plcrui r-lrvibr r-f9ja8p r-og9te1 r-9cviqr"
+                                    data-testid="icon-verified">
+                                    <g>
+                                        <linearGradient gradientUnits="userSpaceOnUse" id="37-a" x1="4.411" x2="18.083"
+                                            y1="2.495" y2="21.508">
+                                            <stop offset="0" stop-color="#f4e72a"></stop>
+                                            <stop offset=".539" stop-color="#cd8105"></stop>
+                                            <stop offset=".68" stop-color="#cb7b00"></stop>
+                                            <stop offset="1" stop-color="#f4ec26"></stop>
+                                            <stop offset="1" stop-color="#f4e72a"></stop>
+                                        </linearGradient>
+                                        <linearGradient gradientUnits="userSpaceOnUse" id="37-b" x1="5.355" x2="16.361"
+                                            y1="3.395" y2="19.133">
+                                            <stop offset="0" stop-color="#f9e87f"></stop>
+                                            <stop offset=".406" stop-color="#e2b719"></stop>
+                                            <stop offset=".989" stop-color="#e2b719"></stop>
+                                        </linearGradient>
+                                        <g clip-rule="evenodd" fill-rule="evenodd">
+                                            <path
+                                                d="M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z"
+                                                fill="url(#37-a)"></path>
+                                            <path
+                                                d="M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z"
+                                                fill="url(#37-b)"></path>
+                                            <path
+                                                d="M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z"
+                                                fill="#d18800"></path>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div class="text-gray-500">@PlayStation</div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <button class="follow bg-white text-black rounded-full px-4 py-1 font-bold">Follow</button>
+                    </div>
+                </div>
+                <div class="item flex justify-between items-center px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="first"><img class="rounded-sm h-[40px] w-[40px]"
+                                src="https://pbs.twimg.com/profile_images/1747144690091323392/0-9srmG1_bigger.jpg"
+                                alt=""></div>
+                        <div class="second">
+                            <div class="flex items-center font-bold hover:underline cursor-pointer">AmiAmi English
+                                <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                    class="ml-[2px] w-[20px] h-[20px] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-1plcrui r-lrvibr r-f9ja8p r-og9te1 r-9cviqr"
+                                    data-testid="icon-verified">
+                                    <g>
+                                        <linearGradient gradientUnits="userSpaceOnUse" id="37-a" x1="4.411" x2="18.083"
+                                            y1="2.495" y2="21.508">
+                                            <stop offset="0" stop-color="#f4e72a"></stop>
+                                            <stop offset=".539" stop-color="#cd8105"></stop>
+                                            <stop offset=".68" stop-color="#cb7b00"></stop>
+                                            <stop offset="1" stop-color="#f4ec26"></stop>
+                                            <stop offset="1" stop-color="#f4e72a"></stop>
+                                        </linearGradient>
+                                        <linearGradient gradientUnits="userSpaceOnUse" id="37-b" x1="5.355" x2="16.361"
+                                            y1="3.395" y2="19.133">
+                                            <stop offset="0" stop-color="#f9e87f"></stop>
+                                            <stop offset=".406" stop-color="#e2b719"></stop>
+                                            <stop offset=".989" stop-color="#e2b719"></stop>
+                                        </linearGradient>
+                                        <g clip-rule="evenodd" fill-rule="evenodd">
+                                            <path
+                                                d="M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z"
+                                                fill="url(#37-a)"></path>
+                                            <path
+                                                d="M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z"
+                                                fill="url(#37-b)"></path>
+                                            <path
+                                                d="M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z"
+                                                fill="#d18800"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="text-gray-500">@AmiAmi_English</div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <button class="follow bg-white text-black rounded-full px-4 py-1 font-bold">Follow</button>
+                    </div>
+                </div>
+                <div class="item flex justify-between items-center px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="first"><img class="rounded-sm h-[40px] w-[40px]"
+                                src="https://pbs.twimg.com/profile_images/1471116473594638344/fIwtQ2y-_bigger.jpg"
+                                alt=""></div>
+                        <div class="second">
+                            <div class="font-bold hover:underline cursor-pointer">Balen Shah</div>
+                            <div class="text-gray-500">@ShahBalen</div>
+                        </div>
+                    </div>
+
+                    <div class="third">
+                        <button class="follow bg-white text-black rounded-full px-4 py-1 font-bold">Follow</button>
+                    </div>
+                </div>
+
+
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer hover:rounded-b-2xl">
+                    <div class="more text-blue-500">Show more</div>
+                </div>
+            </div>
+
+            <div class="trends m-3 bg-[#16181c] w-[70%] py-5 mb-0 pb-0 rounded-2xl">
+                <h1 class="text-xl font-bold px-3">Trends for you</h1>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-sm text-gray-500">Trending In Nepal</div>
+                    <div class="font-bold">Japan</div>
+                    <div class="text-sm text-gray-500">314K posts</div>
+                </div>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-sm text-gray-500">Anupamaa · Trending
+
+                    </div>
+                    <div class="font-bold">#Anupamaa</div>
+                    <div class="text-sm text-gray-500">1,952 posts</div>
+                </div>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-sm text-gray-500">Politics · Trending</div>
+                    <div class="font-bold">China</div>
+                    <div class="text-sm text-gray-500">267K posts</div>
+                </div>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-sm text-gray-500">Sports · Trending</div>
+                    <div class="font-bold">Goat</div>
+                    <div class="text-sm text-gray-500">126K posts</div>
+                </div>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-sm text-gray-500">Entertainment · Trending
+                    </div>
+                    <div class="font-bold">#BadeMiyanChoteMiyan</div>
+                    <div class="text-sm text-gray-500">6,819 posts</div>
+                </div>
+                <div class="item px-3 p-3 my-3 hover:bg-gray-800 cursor-pointer hover:rounded-b-2xl">
+                    <div class="more text-blue-500">Show more</div>
+                </div>
+            </div>
+
+            <div class="footer w-[70%] m-5 text-[#71767B]">
+                <span class="hover:underline cursor-pointer mx-[5px]">Terms of Service</span>
+                <span class="hover:underline cursor-pointer mx-[5px]"> Privacy Policy </span>
+                <span class="hover:underline cursor-pointer mx-[5px]">Cookie Policy</span>
+                <span class="hover:underline cursor-pointer mx-[5px]">Accessibility</span>
+                <span class="hover:underline cursor-pointer mx-[5px]">Ads info</span>
+                <span class="hover:underline cursor-pointer mx-[5px]">More</span>
+                <span class="mx-[5px]">© 2024 X Corp.</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
